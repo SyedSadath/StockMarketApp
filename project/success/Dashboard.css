@@ -112,13 +112,14 @@ body{
 
 .stksTable td{
 /*	border: 1px solid white;
-*/	width: 10%;	
-	padding: 10px;
+	/*padding: 10px;*/
+	width: 10%;	
+	height:40px;
 	text-align: center;
 	font-size: 1.2em;
 }
 .stksTable td:nth-child(1) {
-  background:#bb33ff;
+  /*background:#bb33ff;*/
 }
 .stksTable td:nth-child(7){
 	border: 1px solid white;
@@ -128,17 +129,84 @@ body{
 .stksTable td:nth-child(8){
 	border: 1px solid white;
 	width:5%;
-	background: #ff3300;
+	/*background: #ff3300;*/
+	/*#ff704d*/
 }
 
 .stksTable button{
 	width:100%;
 	height:100%;
+	/*background-color: green;*/
+	border: none;
+	font-size: 1em;
+}
+/*--------------------------------------------------------*/
+.buybutton {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-/*
-.stksTable table:nth-child(7){
-	column-span: 2;
+.buybutton:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
 }
-*/
+
+.buybutton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+/*--------------------------------------------------------*/
+.sellbutton {
+  position: relative;
+  background-color: #ff3300;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.sellbutton:after {
+  content: "";
+  background: #ff704d;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.sellbutton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+/*--------------------------------------------------------*/
 
