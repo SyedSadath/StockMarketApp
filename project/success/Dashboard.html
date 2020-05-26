@@ -30,7 +30,7 @@
       </div>
 
       <div id="greetings">
-        <p class="user">quinn</p>  
+        <p class="user" id="username">quinn</p>  
         <p class="hello">hello</p>
       </div>
 
@@ -44,10 +44,10 @@
         <table id="balTable">
           <tr>
             <td>Available Balance :</td>
-            <td>1000$</td>
+            <td id="available_balance">0$</td>
           </tr>
           <tr>
-            <td class="addmoney" colspan="2"><button>Add Money</button></td>
+            <td class="addmoney" colspan="2"><button type="button" onClick="addmoney()">Add Money</button></td>
           </tr>
         </table>
       </div>
@@ -59,59 +59,59 @@
             <th>stock name</th>
             <th>current value</th>
             <th>%change</th>
-            <th>asset</th>
-            <th>$$$$</th>
+            <th>your AssetValue</th>
+            <th>Input $$</th>
             <th colspan="2">buy/sell</th>
           </tr>
           <tr>
             <td><img  src="../stocks_icons/BulkResizePhotos/bitcoin.jpg"></td>
             <td>Bitcoin</td>
-            <td>9156.20</td>
+            <td>9156.20$</td>
             <td>+.165%</td>
-            <td>5000</td>
-            <td>6000</td>
-            <td><button type="button" class="buybutton">buy</button></td>
-            <td><button type="button" class="sellbutton">sell</button></td>
+            <td>0</td>
+            <td><input class="inputdata" id="input1" type="number" name="value" placeholder="$$$"></td>
+            <td><button type="button" id="1" class="buybutton" onClick="buy(this.id)">buy</button></td>
+            <td><button type="button" id="1" class="sellbutton" onClick="sell(this.id)">sell</button></td>
           </tr>
           <tr>
             <td><img  src="../stocks_icons/BulkResizePhotos/ethereum.jpg"></td>
             <td>Ethereum</td>
-            <td>206.19</td>
+            <td>206.19$</td>
             <td>-.998%</td>
-            <td>658</td>
-            <td>400</td>
-            <td><button type="button" class="buybutton">buy</button></td>
-            <td><button type="button" class="sellbutton">sell</button></td>
+            <td>0</td>
+            <td><input class="inputdata" id="input2" type="number" name="value" placeholder="$$$"></td>
+            <td><button type="button" id="2" class="buybutton" onClick="buy(this.id)">buy</button></td>
+            <td><button type="button" id="2" class="sellbutton" onClick="sell(this.id)">sell</button></td>
           </tr>
           <tr>
             <td><img  src="../stocks_icons/BulkResizePhotos/gold.jpg"></td>
             <td>Gold</td>
-            <td>1735</td>
+            <td>1735$</td>
             <td>-1.298%</td>
-            <td>2000</td>
-            <td>350</td>
-            <td><button type="button" class="buybutton">buy</button></td>
-            <td><button type="button" class="sellbutton">sell</button></td>
+            <td>0</td>
+            <td><input class="inputdata" id="input3" type="number" name="value" placeholder="$$$"></td>
+            <td><button type="button" id="3" class="buybutton" onClick="buy(this.id)">buy</button></td>
+            <td><button type="button" id="3" class="sellbutton" onClick="sell(this.id)">sell</button></td>
           </tr>
           <tr>
             <td><img  src="../stocks_icons/BulkResizePhotos/tesla.jpg"></td>
-            <td>Telsa Motors</td>
-            <td>816.88</td>
+            <td>TelsaMotors</td>
+            <td>816.88$</td>
             <td>+2.624%</td>
-            <td>12000</td>
-            <td>2500</td>
-            <td><button type="button" class="buybutton">buy</button></td>
-            <td><button type="button" class="sellbutton">sell</button></td>
+            <td>0</td>
+            <td><input class="inputdata" id="input4" type="number" name="value" placeholder="$$$"></td>
+            <td><button type="button" id="4" class="buybutton" onClick="buy(this.id)">buy</button></td>
+            <td><button type="button" id="4" class="sellbutton" onClick="sell(this.id)">sell</button></td>
           </tr>
           <tr>
             <td><img  src="../stocks_icons/BulkResizePhotos/microsoft.jpg"></td>
             <td>Microsoft Inc.</td>
-            <td>183.51</td>
+            <td>183.51$</td>
             <td>+2.165%</td>
-            <td>5600</td>
-            <td>600</td>
-            <td><button type="button" class="buybutton">buy</button></td>
-            <td><button type="button" class="sellbutton">sell</button></td>
+            <td>0</td>
+            <td><input class="inputdata" id="input5" type="number" name="value" placeholder="$$$"></td>
+              <td><button type="button" id="5" class="buybutton" onClick="buy(this.id)">buy</button></td>
+            <td><button type="button" id="5" class="sellbutton" onClick="sell(this.id)">sell</button></td>
           </tr>
         </table>        
       </div>
@@ -119,6 +119,4 @@
       <script src="javascript.js"></script>
 
   </body>
-
-
 </html>
